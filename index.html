@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rectangle Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="control-unit">
+      <h2>Border Size:</h2>
+      <label>Width: </label>
+      <input type="text" id="width-input" value="200px">
+      <label>Height: </label>
+      <input type="text" id="height-input" value="200px">
+      <button onclick="setSize()">Set Width/Height</button>
+    </div>
+    <div class="control-unit">
+      <h2>Box Border:</h2>
+      <label>Border Width: </label>
+      <input type="text" id="border-width-input" value="1px">
+      <button onclick="setBorderSize()">Set Border Size</button>
+      <div>
+        <label>Border Color: </label>
+        <button id="border-green" onclick="setBorderColor('green')">Green</button>
+        <button id="border-red" onclick="setBorderColor('red')">Red</button>
+        <button id="border-yellow" onclick="setBorderColor('yellow')">Yellow</button>
+      </div>
+      <div>
+        <label>Border Style: </label>
+        <button onclick="setBorderStyle('solid')">Solid</button>
+        <button onclick="setBorderStyle('dotted')">Dotted</button>
+        <button onclick="setBorderStyle('dashed')">Dashed</button>
+      </div>
+    </div>
+    <div class="control-unit">
+      <h2>Background Color:</h2>
+      <button id="bg-green" onclick="setBackgroundColor('green')">Green</button>
+      <button id="bg-red" onclick="setBackgroundColor('red')">Red</button>
+      <button id="bg-yellow" onclick="setBackgroundColor('yellow')">Yellow</button>
+    </div>
+    <div class="rectangle"></div>
+  </body>
+</html>
